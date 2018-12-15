@@ -38,9 +38,7 @@
                 <a href="#" class="menuList-open-title">腕立て伏せ</a>
                 <div class="movebox"></div>
                 <p class="txt">ここにトレーニングの説明が入ります。腕立てだったら曲げてねとか顔は1m先を見てねとか。あと10回3セットとか。3、4行の説明がいいのかなあ。あああああああ</p>
-                <a class="prButton" href="#">トレーニングを開始</a>
-                <p class="moveUp-wrap"><span class="moveUp">動画をアップロード</span></p>
-                <a class="result-button" href="#">結果を見る</a>
+                <%= render 'form', training_record: @training_record %>
               </div>
             </li>
           </ul>

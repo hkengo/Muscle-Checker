@@ -1,4 +1,5 @@
 class TrainingRecord < ApplicationRecord
   mount_uploader :video, VideoUploader
-  validates :title, :video, :presence => true
+  validates :video, :presence => true
+  has_one :user
 end
