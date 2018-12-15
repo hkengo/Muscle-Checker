@@ -1,0 +1,379 @@
+/* CSS初期化設定 */
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ******************************** */
+
+body {
+  /* min-width: 375px; */
+  background-color: #efefef;
+  color: #333;
+  font-family: 'Helvetica', 'HiraginoSans-W3';
+}
+
+header {
+  height: 54px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #444;
+  background: #fff;
+  border: 0 solid #979797;
+}
+
+a {
+  color: #4a4a4a;
+}
+
+.container {
+  text-align: center;
+  margin: 0 8px;
+}
+/* ******************************** */
+/* ヘッダー */
+/* ******************************** */
+
+.header-wrap {
+  display: flex;
+  text-align: center;
+}
+
+.header-wrap h1 {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 54px;
+  margin: 0 auto;
+}
+
+.hdr-icon-home::before {
+  content: '';
+  display: inline-flex;
+  width: 28px;
+  height: 28px;
+  background-repeat: no-repeat;
+  background-size: 30px;
+  padding: 6px;
+  background-image: url(./img/mobirise-icons.png);
+}
+
+.hdr-icon-home {
+  display: inline-block;
+  height: 28px;
+  width: 28px;
+}
+
+.hdr-icon-menu::before {
+  content: '';
+  display: inline-flex;
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-size: 30px;
+  padding: 6px;
+  background-image: url(./img/Shape.png);
+}
+
+.hdr-icon-meni {
+  display: inline-block;
+  height: 28px;
+  width: 28px;
+}
+
+/* ******************************** */
+/* ナビゲーションバー */
+/* ******************************** */
+
+.nav {
+  font-size: 18px;
+  color: #4a4a4a;
+  letter-spacing: 2.36px;
+  text-align: center;
+  margin: 20px;
+}
+/* ******************************** */
+/* メインビジュアル*/
+/* ******************************** */
+
+/* ******************************** */
+/* コンテンツ*/
+/* ******************************** */
+.conts {
+  width: 356px;
+}
+
+.topic {
+  font-weight: 600;
+  font-size: 18px;
+  color: #4a4a4a;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.menuList {
+}
+
+/* ******************************** */
+/* 閉じた状態*/
+
+.menuList-close {
+  display: block;
+  width: 300px;
+  height: 50px;
+  font-size: 14px;
+  color: #34495e;
+  letter-spacing: 0.81px;
+  text-decoration: none;
+  line-height: 50px;
+  border: 1px solid #34495e;
+  border-radius: 3px;
+  background: #fff;
+  margin: 0 auto 12px;
+}
+
+.menuList-close::after {
+  content: '';
+  display: inline-flex;
+  width: 11px;
+  height: 9px;
+  background-repeat: no-repeat;
+  background-size: 11px;
+  background-image: url(./img/arrow-filled.png);
+  margin-left: 5px;
+}
+
+/* ******************************** */
+/* 開いた状態*/
+
+.menuList-open {
+  display: block;
+  width: 358px;
+  letter-spacing: 0.81px;
+  line-height: 50px;
+  border: 1px solid #34495e;
+  border-radius: 3px;
+  background: #fff;
+  margin-bottom: 12px;
+}
+
+.menuList-open-title {
+  text-decoration: none;
+  font-size: 14px;
+  color: #34495e;
+}
+
+.menuList-open-title::after {
+  content: '';
+  display: inline-flex;
+  width: 11px;
+  height: 9px;
+  background-repeat: no-repeat;
+  background-size: 11px;
+  background-image: url(./img/arrow-filled.png);
+  margin-left: 5px;
+  transform: rotate(-180deg);
+}
+
+.movebox {
+  width: 308px;
+  height: 140px;
+  background: #d8d8d8;
+  margin: 0 auto;
+}
+
+.txt {
+  width: 308px;
+  font-size: 14px;
+  color: #34495e;
+  letter-spacing: 1px;
+  text-align: justify;
+  line-height: 16px;
+  margin: 8px auto 24px;
+}
+
+.prButton {
+  display: block;
+  width: 208px;
+  height: 35px;
+  background: #34495e;
+  font-size: 14px;
+  color: #fff;
+  letter-spacing: 2.36px;
+  text-decoration: none;
+  line-height: 35px;
+  border: 1px solid #34495e;
+  border-radius: 3px;
+  margin: 0 auto 12px;
+}
+
+.moveUp-wrap {
+  margin-bottom: 24px;
+}
+
+.moveUp {
+  text-decoration: underline;
+  font-size: 18px;
+}
+
+.moveUp::after {
+  content: '';
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  background-repeat: no-repeat;
+  background-size: 22px;
+  background-image: url(./img/check.png);
+  margin-left: 5px;
+}
+
+.result-button {
+  display: block;
+  width: 208px;
+  height: 35px;
+  background: #fff;
+  font-size: 14px;
+  color: #34495e;
+  letter-spacing: 2.36px;
+  text-decoration: none;
+  line-height: 35px;
+  border: 1px solid #34495e;
+  border-radius: 3px;
+  margin: 0 auto 12px;
+}

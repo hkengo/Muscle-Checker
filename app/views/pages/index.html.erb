@@ -1,6 +1,51 @@
-<%= stylesheet_link_tag "pages_index", :media => "all" %>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%= stylesheet_link_tag "pages_index", :media => "all" %>
+    <title>Muscle form checker</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-wrap">
+        <!-- <a class="hdr-icon-home" href="#"></a> -->
+        <h1>Muscle form checker</h1>
+        <!-- <a class="hdr-icon-menu" href="#"></a> -->
+      </div>
+    </header>
 
-<h1>Pages#index</h1>
-<p>Find me in app/views/pages/index.html.erb</p>
+    <!-- コンテンツ -->
+    <div class="container">
+      <!-- ナブバー -->
+      <div class="nav">
+        <a href="#">ホーム</a>
+        <a href="#">トレーニング</a>
+        <a href="#">スコア</a>
+      </div>
+      <div class="mv">
+      </div>
 
-<%= link_to "aaa筋トレメニュー記録", new_training_record_path %>
+      <!-- トレーニングメニュー -->
+      <div class="conts">
+        <p class="topic">トレーニングメニュー</p>
+        <div class="menuList">
+          <ul>
+            <li><a href="#" class="menuList-close">腕立て伏せ</a></li>
+            <li><a href="#" class="menuList-close">腕立て伏せ</a></li>
+            <li>
+              <div class="menuList-open">
+                <a href="#" class="menuList-open-title">腕立て伏せ</a>
+                <div class="movebox"></div>
+                <p class="txt">ここにトレーニングの説明が入ります。腕立てだったら曲げてねとか顔は1m先を見てねとか。あと10回3セットとか。3、4行の説明がいいのかなあ。あああああああ</p>
+                <a class="prButton" href="#">トレーニングを開始</a>
+                <p class="moveUp-wrap"><span class="moveUp">動画をアップロード</span></p>
+                <a class="result-button" href="#">結果を見る</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
