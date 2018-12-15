@@ -147,7 +147,7 @@ body {
   /* min-width: 375px; */
   background-color: #efefef;
   color: #333;
-  font-family: 'Helvetica', 'HiraginoSans-W3';
+  font-family: 'Helvetica', 'HiraginoSans';
 }
 
 header {
@@ -191,7 +191,7 @@ a {
   background-repeat: no-repeat;
   background-size: 30px;
   padding: 6px;
-  background-image: url(./img/mobirise-icons.png);
+  background-image: url(../img/mobirise-icons.png);
 }
 
 .hdr-icon-home {
@@ -208,7 +208,7 @@ a {
   background-repeat: no-repeat;
   background-size: 30px;
   padding: 6px;
-  background-image: url(./img/Shape.png);
+  background-image: url(../img/Shape.png);
 }
 
 .hdr-icon-meni {
@@ -232,19 +232,69 @@ a {
 /* メインビジュアル*/
 /* ******************************** */
 
+.mv-wrap {
+}
+
+.mv {
+  display: block;
+  width: 375px;
+}
+
+/* ******************************** */
+/* 説明*/
+/* ******************************** */
+
+.article {
+  height: 125px;
+  background-color: #fff;
+  padding: 44px;
+  text-align: center;
+}
+
+.article-title {
+  font-weight: 700;
+}
+
+.article-txt {
+  font-size: 14px;
+  color: #34495e;
+  letter-spacing: 1px;
+  text-align: justify;
+  line-height: 16px;
+  margin: 24px auto;
+}
+
 /* ******************************** */
 /* コンテンツ*/
 /* ******************************** */
 .conts {
-  width: 356px;
+  /* width: 356px; */
+  margin: 0 auto;
+}
+
+.article-title span {
+  font-size: 20px;
+  color: #4a4a4a;
+  letter-spacing: 1.17px;
+  /* text-align: center; */
+  background: linear-gradient(transparent 70%, #f8c51c 70%);
 }
 
 .topic {
-  font-weight: 600;
-  font-size: 18px;
+  position: relative;
+  top: -17px;
+  font-weight: 800;
+  font-size: 28px;
   color: #4a4a4a;
-  text-align: center;
-  margin-bottom: 20px;
+  letter-spacing: 3px;
+  /* margin-bottom: 15px; */
+}
+
+.subtopic {
+  font-weight: 200;
+  font-size: 12px;
+  letter-spacing: 3px;
+  margin-bottom: 32px;
 }
 
 .menuList {
@@ -255,16 +305,15 @@ a {
 
 .menuList-close {
   display: block;
-  width: 300px;
+  width: 309px;
   height: 50px;
   font-size: 14px;
   color: #34495e;
   letter-spacing: 0.81px;
   text-decoration: none;
   line-height: 50px;
-  border: 1px solid #34495e;
   border-radius: 3px;
-  background: #fff;
+  background: #f8c51c;
   margin: 0 auto 12px;
 }
 
@@ -275,7 +324,7 @@ a {
   height: 9px;
   background-repeat: no-repeat;
   background-size: 11px;
-  background-image: url(./img/arrow-filled.png);
+  background-image: url(../img/arrow-filled.png);
   margin-left: 5px;
 }
 
@@ -284,7 +333,6 @@ a {
 
 .menuList-open {
   display: block;
-  width: 358px;
   letter-spacing: 0.81px;
   line-height: 50px;
   border: 1px solid #34495e;
@@ -295,6 +343,7 @@ a {
 
 .menuList-open-title {
   text-decoration: none;
+  font-weight: 800;
   font-size: 14px;
   color: #34495e;
 }
@@ -306,7 +355,7 @@ a {
   height: 9px;
   background-repeat: no-repeat;
   background-size: 11px;
-  background-image: url(./img/arrow-filled.png);
+  background-image: url(../img/arrow-filled.png);
   margin-left: 5px;
   transform: rotate(-180deg);
 }
@@ -315,7 +364,7 @@ a {
   width: 308px;
   height: 140px;
   background: #d8d8d8;
-  margin: 0 auto;
+  margin: 0 auto 24px;
 }
 
 .txt {
@@ -328,19 +377,44 @@ a {
   margin: 8px auto 24px;
 }
 
-.prButton {
+.uploadBtn {
   display: block;
-  width: 208px;
-  height: 35px;
-  background: #34495e;
+  width: 309px;
+  height: 72px;
   font-size: 14px;
-  color: #fff;
-  letter-spacing: 2.36px;
+  color: #34495e;
+  letter-spacing: 1px;
   text-decoration: none;
-  line-height: 35px;
-  border: 1px solid #34495e;
-  border-radius: 3px;
+  line-height: 73px;
+  border: dashed 2px #f8c51c;
+  border-radius: 12px;
   margin: 0 auto 12px;
+}
+
+.anaBtn {
+  display: block;
+  width: 309px;
+  height: 44px;
+  font-size: 14px;
+  color: #34495e;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-decoration: none;
+  line-height: 44px;
+  background-color: #f8c51c;
+  border-radius: 22px;
+  margin: 0 auto 12px;
+}
+
+.anaBtn span::before {
+  content: '';
+  display: inline-flex;
+  width: 16px;
+  height: 10px;
+  background-repeat: no-repeat;
+  background-size: 13px;
+  background-image: url(../img/check.png);
+  margin-right: 5px;
 }
 
 .moveUp-wrap {
@@ -350,30 +424,4 @@ a {
 .moveUp {
   text-decoration: underline;
   font-size: 18px;
-}
-
-.moveUp::after {
-  content: '';
-  display: inline-block;
-  width: 22px;
-  height: 22px;
-  background-repeat: no-repeat;
-  background-size: 22px;
-  background-image: url(./img/check.png);
-  margin-left: 5px;
-}
-
-.result-button {
-  display: block;
-  width: 208px;
-  height: 35px;
-  background: #fff;
-  font-size: 14px;
-  color: #34495e;
-  letter-spacing: 2.36px;
-  text-decoration: none;
-  line-height: 35px;
-  border: 1px solid #34495e;
-  border-radius: 3px;
-  margin: 0 auto 12px;
 }

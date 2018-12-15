@@ -1,3 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./score.css">
+    <title>Muscle form checker</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-wrap">
+        <!-- <a class="hdr-icon-home" href="#"></a> -->
+        <h1>Muscle form checker</h1>
+        <!-- <a class="hdr-icon-menu" href="#"></a> -->
+      </div>
+    </header>
+
+    <div class="container">
+<!-- /* ******************************** */ -->
+    <!-- トレーニングの練習メニューを決める画面 -->
+<!-- /* ******************************** */ -->
+    <!-- コンテンツ -->
+      <div class="conts">
+        <div class="menuListItem">
+          <p class="topic">Training Menu</p>
+          <p class="subtopic">トレーニングメニュー</p>
+          <div class="menuList">
+            <ul>
+              <li><a href="#" class="menuList-close">腕立て伏せ</a></li>
+              <li><a href="#" class="menuList-close">スクワット</a></li>
+              <li>
+                <div class="menuList-open">
+                  <a href="#" class="menuList-open-title">腕立て伏せ</a>
+                  <div class="movebox"></div>
+                  <p class="txt">ここにトレーニングの説明が入ります。腕立てだったら曲げてねとか顔は1m先を見てねとか。あと10回3セットとか。3、4行の説明がいいのかなあ。あああああああ</p>
+                  <a class="uploadBtn" href="#">ファイルをアップロード</a>
+                  <a class="anaBtn" href="#"><span>フォームを分析する</span></a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+
 <%= stylesheet_link_tag "training_records_show", :media => "all" %>
 
 <p id="notice"><%= notice %></p>

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <%= stylesheet_link_tag "pages_index", :media => "all" %>
+    <link rel="stylesheet" type="text/css" href="./style.css">
     <title>Muscle form checker</title>
   </head>
   <body>
@@ -14,34 +14,39 @@
         <!-- <a class="hdr-icon-menu" href="#"></a> -->
       </div>
     </header>
+    <div class="mv-wrap">
+      <img class="mv" src="../img/mv.png" alt=" Muscle Form Checker">
+    </div>
+    <div class="article">
+      <p class="article-title"><span>Muscle form checker</span>とは</p>
+      <p class="article-txt">ここにトレーニングの説明が入ります。腕立てだったら曲げてねとか顔は1m先を見てねとか。あと10回3セットとか。3、4行の説明がいいのかなあ。あああああああ</p>
+    </div>
 
-    <!-- コンテンツ -->
     <div class="container">
-      <!-- ナブバー -->
-      <div class="nav">
-        <a href="#">ホーム</a>
-        <a href="#">トレーニング</a>
-        <a href="#">スコア</a>
-      </div>
-      <div class="mv">
-      </div>
-
-      <!-- トレーニングメニュー -->
+<!-- /* ******************************** */ -->
+    <!-- トレーニングの練習メニューを決める画面 -->
+<!-- /* ******************************** */ -->
+    <!-- コンテンツ -->
       <div class="conts">
-        <p class="topic">トレーニングメニュー</p>
-        <div class="menuList">
-          <ul>
-            <li><a href="#" class="menuList-close">腕立て伏せ</a></li>
-            <li><a href="#" class="menuList-close">腕立て伏せ</a></li>
-            <li>
-              <div class="menuList-open">
-                <a href="#" class="menuList-open-title">腕立て伏せ</a>
-                <div class="movebox"></div>
-                <p class="txt">ここにトレーニングの説明が入ります。腕立てだったら曲げてねとか顔は1m先を見てねとか。あと10回3セットとか。3、4行の説明がいいのかなあ。あああああああ</p>
-                <%= render 'form', training_record: @training_record %>
-              </div>
-            </li>
-          </ul>
+        <div class="menuListItem">
+          <p class="topic">Training Menu</p>
+          <p class="subtopic">トレーニングメニュー</p>
+          <div class="menuList">
+            <ul>
+              <li><a href="#" class="menuList-close">腕立て伏せ</a></li>
+              <li><a href="#" class="menuList-close">スクワット</a></li>
+              <li>
+                <div class="menuList-open">
+                  <a href="#" class="menuList-open-title">腕立て伏せ</a>
+                  <div class="movebox"></div>
+                  <p class="txt">ここにトレーニングの説明が入ります。腕立てだったら曲げてねとか顔は1m先を見てねとか。あと10回3セットとか。3、4行の説明がいいのかなあ。あああああああ</p>
+                  <%= render 'form', training_record: @training_record %>
+                  <a class="uploadBtn" href="#">ファイルをアップロード</a>
+                  <a class="anaBtn" href="#"><span>フォームを分析する</span></a>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
