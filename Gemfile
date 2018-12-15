@@ -66,6 +66,9 @@ gem "twitter-bootstrap-rails"
 gem 'less-rails', git: 'https://github.com/MustafaZain/less-rails'
 gem 'therubyracer'
 
-# 動画アップロード・CarrierWaveとFFmpeg
+# for image uploader with AWS S3
 gem 'carrierwave'
+gem 'fog'
+
+
 gem 'pry-rails'
