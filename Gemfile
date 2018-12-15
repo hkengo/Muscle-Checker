@@ -63,7 +63,7 @@ gem 'omniauth-twitter'
 
 # bootstrap
 gem "twitter-bootstrap-rails"
-gem "less-rails"
+gem 'less-rails', git: 'https://github.com/MustafaZain/less-rails'
 gem 'therubyracer'
 
 # 動画アップロード・CarrierWaveとFFmpeg
