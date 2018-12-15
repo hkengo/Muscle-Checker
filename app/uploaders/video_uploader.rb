@@ -42,11 +42,6 @@ class VideoUploader < CarrierWave::Uploader::Base
   # Override the filename of the uploaded files:
   # Avoid using model.id or version_name here, see uploader/store.rb for details.
   def filename
-    # "something.jpg" if original_filename
-    if model.user && model.created_at && original_filename
-      "#{model.user.id}-#{model.part}-#{model.created_at.strftime("%Y%m%d%H%M%S")}.#{original_filename.split('.').last}"
-    else
-      "something.jpg"
-    end
+    original_filename if original_filename
   end
 end
