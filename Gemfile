@@ -61,7 +61,10 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'devise'
 gem 'omniauth-twitter'
 
-# 動画アップロード・CarrierWaveとFFmpeg
+# bootstrap
 gem "twitter-bootstrap-rails"
 gem "less-rails"
 gem 'therubyracer'
+
+# 動画アップロード・CarrierWaveとFFmpeg
+gem 'carrierwave'
