@@ -70,5 +70,5 @@ gem 'therubyracer'
 gem 'carrierwave'
 gem 'fog'
 
-
+gem 'dotenv-rails'
 gem 'pry-rails'
