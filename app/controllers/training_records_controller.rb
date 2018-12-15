@@ -24,7 +24,8 @@ class TrainingRecordsController < ApplicationController
   # POST /training_records
   # POST /training_records.json
   def create
-    @training_record = TrainingRecord.new(training_record_params)
+    @training_record = current_user.training_records.new(training_record_params)
+    @training_record.part = 'push_up' unless @training_record.part.present?
 
     respond_to do |format|
       if @training_record.save
