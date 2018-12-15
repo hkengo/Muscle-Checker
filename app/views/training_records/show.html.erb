@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @training_record.title %>
+</p>
+
+<p>
+  <strong>Video:</strong>
+  <%= @training_record.video %>
+</p>
+
+<%= link_to 'Edit', edit_training_record_path(@training_record) %> |
+<%= link_to 'Back', training_records_path %>
