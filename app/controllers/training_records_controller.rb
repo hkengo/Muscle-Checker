@@ -1,5 +1,5 @@
 class TrainingRecordsController < ApplicationController
-  before_action :set_training_record, only: [:show, :edit, :update, :destroy]
+  before_action :set_training_record, only: [:show, :edit, :update, :destroy, :download]
 
   # GET /training_records
   # GET /training_records.json
@@ -59,6 +59,13 @@ class TrainingRecordsController < ApplicationController
       format.html { redirect_to training_records_url, notice: 'Training record was successfully destroyed.' }
       format.json { head :no_content }
     end
+  end
+
+  def download
+    # ref: https://github.com/carrierwaveuploader/carrierwave#activerecord
+    filepath = @training_record.video.current_path
+    stat = File::stat(filepath)
+    send_file(filepath, :filename => @training_record.video_identifier, :length => stat.size)
   end
 
   private

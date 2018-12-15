@@ -68,3 +68,4 @@ gem 'therubyracer'
 
 # 動画アップロード・CarrierWaveとFFmpeg
 gem 'carrierwave'
+gem 'pry-rails'
